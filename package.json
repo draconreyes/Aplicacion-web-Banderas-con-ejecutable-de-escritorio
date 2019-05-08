@@ -1,0 +1,39 @@
+{
+  "name": "Banderas",
+  "version": "1.0.0",
+  "description": "Juego Banderas",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "pack":"build --dir",
+    "dist":"build"
+  },
+  "author": "Diego Alejandro Peña",
+  "license": "ISC",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "electron-builder": "^20.39.0"
+  }
+}
